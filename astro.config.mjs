@@ -3,11 +3,13 @@
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import { defineConfig, fontProviders } from "astro/config";
+import { legacyPostRedirects } from "./src/legacyRedirects";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://example.com",
   integrations: [mdx(), sitemap()],
+  redirects: legacyPostRedirects,
   fonts: [
     {
       provider: fontProviders.local(),
