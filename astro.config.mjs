@@ -7,7 +7,7 @@ import { legacyPostRedirects } from "./src/legacyRedirects";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://example.com",
+  site: "https://gbabiars.github.io",
   integrations: [mdx(), sitemap()],
   redirects: legacyPostRedirects,
   fonts: [
